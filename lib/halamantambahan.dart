@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ta_aplikasi_berita/halamanutama.dart';
@@ -24,7 +24,7 @@ class _HalamanTambahanState extends State<HalamanTambahan> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Halaman Tambahan'),
+        title: Center(child: Text('Halaman Tambahan', style: GoogleFonts.libreFranklin(fontSize: 25, fontWeight: FontWeight.bold))),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

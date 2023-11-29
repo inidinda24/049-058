@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ta_aplikasi_berita.app-mergeDebugResources-11:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.ta_aplikasi_berita.app-mergeDebugResources-5:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "E:\\Materi Kuliah\\Materi Kuliah 5\\Prak Mobile\\Final Project\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\SEMESTER 5\\PRAK MOBILE\\Final Project Berita\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

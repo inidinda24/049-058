@@ -101,12 +101,6 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                                   textAlign: TextAlign.left,
                                 ),
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  // Implementasi logika favorit di sini
-                                },
-                                child: Icon(Icons.bookmark_outline_rounded),
-                              ),
                             ],
                           ),
                         ),

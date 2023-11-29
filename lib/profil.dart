@@ -46,10 +46,12 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profil', style: GoogleFonts.libreFranklin(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),),
+        title: Center(
+          child: Text('Profil', style: GoogleFonts.libreFranklin(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),),
+        ),
       ),
       body:
         SingleChildScrollView(

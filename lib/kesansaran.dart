@@ -18,7 +18,8 @@ class _KesanSaranState extends State<KesanSaran> {
             fontSize: 25.0,
             fontWeight: FontWeight.bold
           ),
-        ), ),
+        ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -46,7 +47,7 @@ class _KesanSaranState extends State<KesanSaran> {
                   ),
                   SizedBox(height: 8.0),
                   Text(
-                    'Selama mengikuti mata kuliah Praktikum Pemrograman Aplikasi Mobile, saya merasa sangat terbantu dan mendapatkan banyak pemahaman baru terkait pengembangan aplikasi mobile. Asisten pengajar memberikan penjelasan dengan baik dan materi perkuliahan sangat relevan dengan perkembangan teknologi saat ini. Saya senang dengan pendekatan praktis yang diterapkan dalam setiap sesi, yang memberikan pengalaman langsung dalam mengembangkan aplikasi mobile.',
+                    'Selama mengikuti mata kuliah Pemrograman Aplikasi Mobile, saya merasa sangat terbantu dan mendapatkan banyak pemahaman baru terkait pengembangan aplikasi mobile. Dosen memberikan penjelasan dengan baik dan materi perkuliahan sangat relevan dengan perkembangan teknologi saat ini. Saya senang dengan pendekatan praktis yang diterapkan dalam setiap sesi, yang memberikan pengalaman langsung dalam mengembangkan aplikasi mobile.',
                     style: GoogleFonts.libreFranklin(
                       textStyle: TextStyle(
                         fontSize: 18.0,
@@ -67,7 +68,7 @@ class _KesanSaranState extends State<KesanSaran> {
                   ),
                   SizedBox(height: 8.0),
                   Text(
-                    'Saya berharap dapat lebih mendalami beberapa topik spesifik dalam mata kuliah ini. Lancar-lancar kuliahnya Mas! Semoga 2024 wisuda:)',
+                    'Saya berharap dapat lebih mendalami beberapa topik spesifik dalam mata kuliah ini.',
                     style: GoogleFonts.libreFranklin(
                       textStyle: TextStyle(
                         fontSize: 18.0,
