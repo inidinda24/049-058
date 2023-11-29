@@ -52,10 +52,6 @@ class _ProfileState extends State<Profile> {
         ),),
       ),
       body:
-    // Center(
-    //     child: user == null
-    //         ? CircularProgressIndicator()
-    //         :
         SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,10 +68,14 @@ class _ProfileState extends State<Profile> {
                       AssetImage("assets/images/profilepic.jpg"),
                     ),
                     SizedBox(width: 20,),
-                    Text(
-                      '${user?.firstName}',
-                      style: TextStyle(fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Text(
+                        '${user?.firstName}',
+                        style: TextStyle(fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        ),
+                        overflow: TextOverflow.clip,
                       ),
                     ),
                   ],
@@ -110,12 +110,16 @@ class _ProfileState extends State<Profile> {
                               children: [
                                 Text('Nama Lengkap',
                                   style: TextStyle(fontSize: 14),),
-                                Text(
-                                  '${user?.firstName} ${user?.lastName}',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      fontSize: 20
-                                    )
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.75,
+                                  child: Text(
+                                    '${user?.firstName} ${user?.lastName}',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        fontSize: 20
+                                      ),
+                                    overflow: TextOverflow.clip,
+                                  ),
                                 ),
                               ],
                             ),
@@ -132,12 +136,16 @@ class _ProfileState extends State<Profile> {
                               children: [
                                 Text('Email',
                                   style: TextStyle(fontSize: 14),),
-                                Text(
-                                    user!.email,
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20
-                                    )
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.75,
+                                  child: Text(
+                                      user!.email,
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20
+                                      ),
+                                    overflow: TextOverflow.clip,
+                                  ),
                                 ),
                               ],
                             ),
@@ -154,26 +162,21 @@ class _ProfileState extends State<Profile> {
                               children: [
                                 Text('Minat',
                                   style: TextStyle(fontSize: 14),),
-                                Text(
-                                    user!.interests.join(', '),
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20
-                                    )
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.75,
+                                  child: Text(
+                                      user!.interests.join(', '),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20
+                                      ),
+                                    overflow: TextOverflow.clip,
+                                  ),
                                 ),
                               ],
                             ),
                           ],
                         ),
-                        // Text(
-                        //   'Minat',
-                        //   style: TextStyle(
-                        //       fontSize: 14, fontWeight: FontWeight.bold),
-                        // ),
-                        // Text(
-                        //   user!.interests.join(', '),
-                        //   style: TextStyle(fontSize: 14),
-                        // ),
                       ],
                     ),
                   ),
@@ -207,12 +210,16 @@ class _ProfileState extends State<Profile> {
                               children: [
                                 Text('Help Center',
                                   style: TextStyle(fontSize: 14),),
-                                Text(
-                                    '+514 328',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20
-                                    )
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.75,
+                                  child: Text(
+                                      '+514 328',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20
+                                      ),
+                                    overflow: TextOverflow.clip,
+                                  ),
                                 ),
                               ],
                             ),
@@ -229,12 +236,16 @@ class _ProfileState extends State<Profile> {
                               children: [
                                 Text('Alamat Kantor',
                                   style: TextStyle(fontSize: 14),),
-                                Text(
-                                    "Jl. Mawar No. 12, Bekasi, Indonesia",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20
-                                    )
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.75,
+                                  child: Text(
+                                      "Jl. Mawar No. 12, Bekasi, Indonesia",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20
+                                      ),
+                                    overflow: TextOverflow.clip,
+                                  ),
                                 ),
                               ],
                             ),
