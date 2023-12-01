@@ -197,7 +197,7 @@ class _RegistrasiState extends State<Registrasi> {
                           await _saveUserData(user);
 
                           // Kembalikan ke halaman login dengan objek UserModel
-                          if (!_isError) Navigator.pop(context, user);
+                          if (!_isError) Navigator.pop(context);
                         },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlueAccent,

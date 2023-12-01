@@ -107,11 +107,6 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
   late DateTime currentTime;
 
   @override
-  void initState() {
-    super.initState();
-    selectedTimeZone = 'Asia/Jakarta';
-    currentTime = DateTime.now().toLocal();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -575,6 +570,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
       _WIBTime = _WIBTime;
       _GMTTime = _GMTTime;
       _minuteConvert = _selectedItemMinute;
-    });
+    }
+    );
   }
 }
