@@ -32,7 +32,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
       },
       items: [
         _buildBottomNavigationBarItem(Icons.home_rounded, "Home", 0),
-        _buildBottomNavigationBarItem(Icons.category_rounded, "Category", 1),
+        _buildBottomNavigationBarItem(Icons.interests_rounded, "Category", 1),
         _buildBottomNavigationBarItem(Icons.add_circle, "Tambahan", 2),
         _buildBottomNavigationBarItem(Icons.person_3_rounded, "Profile", 3),
       ],

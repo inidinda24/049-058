@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ZonaWaktu extends StatefulWidget {
   @override
@@ -117,7 +117,12 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Zona Waktu'),
+        title: Text('Zona Waktu', style: GoogleFonts.libreFranklin(
+          textStyle: TextStyle(
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold
+          ),
+        ), ),
       ),
       body:
       SingleChildScrollView(
@@ -155,7 +160,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     value,
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 50,
+                                        fontSize: 40,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 );
@@ -165,7 +170,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                               ".",
                               style: TextStyle(
                                   color: Colors.black54,
-                                  fontSize: 50,
+                                  fontSize: 40,
                                   fontWeight: FontWeight.bold),
                             ),
                             DropdownButton<String>(
@@ -188,7 +193,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     value,
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 50,
+                                        fontSize: 40,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 );
@@ -198,7 +203,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                               " ",
                               style: TextStyle(
                                   color: Colors.black54,
-                                  fontSize: 50,
+                                  fontSize: 40,
                                   fontWeight: FontWeight.bold),
                             ),
                             DropdownButton<String>(
@@ -226,7 +231,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     value,
                                     style: TextStyle(
                                       color: Colors.black54,
-                                      fontSize: 45,
+                                      fontSize: 35,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -249,7 +254,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.teal,
+                            color: Colors.lightBlueAccent,
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(15.0),
@@ -261,7 +266,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                   color: Colors.white,
                                 ),
                                 Text(
-                                  "CONVERT",
+                                  " Convert",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 22,
@@ -297,7 +302,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     "WIT",
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 18),
+                                        fontSize: 18, fontWeight: FontWeight.bold),
                                   ),
                                   Expanded(
                                     child: Center(
@@ -307,21 +312,21 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                           Text(
                                             "${_WITTime}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "." ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "${_minuteConvert}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
@@ -352,7 +357,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     "WITA",
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 18),
+                                        fontSize: 18,  fontWeight: FontWeight.bold),
                                   ),
                                   Expanded(
                                     child: Center(
@@ -362,21 +367,21 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                           Text(
                                             "${_WITATime}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "." ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "${_minuteConvert}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
@@ -412,7 +417,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     "WIB",
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 18),
+                                        fontSize: 18, fontWeight: FontWeight.bold),
                                   ),
                                   Expanded(
                                     child: Center(
@@ -422,21 +427,21 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                           Text(
                                             "${_WIBTime}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "." ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "${_minuteConvert}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
@@ -467,7 +472,7 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                     "GMT",
                                     style: TextStyle(
                                         color: Colors.black54,
-                                        fontSize: 18),
+                                        fontSize: 18,  fontWeight: FontWeight.bold),
                                   ),
                                   Expanded(
                                     child: Center(
@@ -477,21 +482,21 @@ class _ZonaWaktuState extends State<ZonaWaktu> {
                                           Text(
                                             "${_GMTTime}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "." ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
                                           Text(
                                             "${_minuteConvert}" ?? "NULL",
                                             style: TextStyle(
-                                                fontSize: 45,
+                                                fontSize: 35,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black54),
                                           ),
