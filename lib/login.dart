@@ -1,3 +1,4 @@
+import 'package:crypt/crypt.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:ta_aplikasi_berita/halamanutama.dart';
@@ -238,8 +239,11 @@ class _LoginState extends State<Login> {
   bool _isUserDataValid({String? email, String? password}) {
     final users = Hive.box<UserModel>('userBox').values.cast();
 
+    bool isValid(String cryptFormatHash, String enteredPassword) =>
+        Crypt(cryptFormatHash).match(enteredPassword);
+
     for (UserModel user in users) {
-      if (user.email == email && user.password == password) {
+      if (user.email == email && isValid(user.password, password!) == true ) {
         return true;
       }
     }

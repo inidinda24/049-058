@@ -122,6 +122,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "crypt",
+      "rootUri": "file:///C:/Users/LENOVO/AppData/Local/Pub/Cache/hosted/pub.dev/crypt-4.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///C:/Users/LENOVO/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
@@ -620,7 +626,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-28T23:59:03.368771Z",
+  "generated": "2023-11-29T16:31:38.180501Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }

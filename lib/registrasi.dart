@@ -1,3 +1,4 @@
+import 'package:crypt/crypt.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -183,13 +184,14 @@ class _RegistrasiState extends State<Registrasi> {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () async {
+                          String pass = Crypt.sha256(_passwordController.text).toString();
                           // Logika Registrasi
                           UserModel user = UserModel()
                             ..firstName = _firstNameController.text
                             ..lastName = _lastNameController.text
                             ..interests = List.from(selectedMinat)
                             ..email = _emailController.text
-                            ..password = _passwordController.text;
+                            ..password = Crypt.sha256(_passwordController.text).toString();
 
                           // Simpan data user menggunakan Hive
                           await _saveUserData(user);
